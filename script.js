@@ -41,6 +41,7 @@ let oper = "";
 btns.forEach(button => {
     button.addEventListener('click',(event) => {
         let eventKey = event.target.textContent;
+        if(eventKey === "clear") display = "";
         if(display.length < 23){
             // checks if user has clicked dot
             ((eventKey === ".") && !(display.includes("."))) ? display += eventKey :
