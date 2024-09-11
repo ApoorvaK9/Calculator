@@ -42,7 +42,10 @@ btns.forEach(button => {
     button.addEventListener('click',(event) => {
         let eventKey = event.target.textContent;
         if(display.length < 23){
-            (isNaN(eventKey))   ?   oper = eventKey :   display += eventKey    
+            // checks if user has clicked dot
+            ((eventKey === ".") && !(display.includes("."))) ? display += eventKey :
+            //checks if user has clicked a number
+            !(isNaN(eventKey))   ?   display += eventKey : display;
             }
         else 
             display = "Bacche ki jaan lega kya!";
