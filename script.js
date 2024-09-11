@@ -31,3 +31,23 @@ function operate(operator,num1,num2){
             break;
     }
 }
+
+const btns = document.querySelectorAll("button");
+let savedNum = document.querySelector("#screen p");
+
+let display = "";
+let oper = "";
+
+btns.forEach(button => {
+    button.addEventListener('click',(event) => {
+        let eventKey = event.target.textContent;
+        if(display.length < 23){
+            (isNaN(eventKey))   ?   oper = eventKey :   display += eventKey    
+            }
+        else 
+            display = "Bacche ki jaan lega kya!";
+        
+        savedNum.textContent = display;
+    });
+});
+
