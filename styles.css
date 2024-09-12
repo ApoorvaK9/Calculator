@@ -44,10 +44,10 @@ button.clear {
     background-color: orange;
 }
 
-button.oper.equals {
+button.equals {
     width: 195px;
 }
-
+    
 div#screen {
     width: 500px;
     height: 100px;
