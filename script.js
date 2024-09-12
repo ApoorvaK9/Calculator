@@ -42,11 +42,13 @@ btns.forEach(button => {
     button.addEventListener('click',(event) => {
         let eventKey = event.target.textContent;
         if(eventKey === "clear") display = "";
-        if(display.length < 23){
+        else if(eventKey === ">" && display !== "Bacche ki jaan lega kya!") 
+            display = display.slice(0,-1);
+        else if(display.length < 23){
             // checks if user has clicked dot
             ((eventKey === ".") && !(display.includes("."))) ? display += eventKey :
             //checks if user has clicked a number
-            !(isNaN(eventKey))   ?   display += eventKey : display;
+            !(isNaN(eventKey))  ?  display += eventKey : display;
             }
         else 
             display = "Bacche ki jaan lega kya!";
