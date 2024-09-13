@@ -54,10 +54,17 @@ div#screen {
     border: thick solid black;
 }
 
-#screen p {
+.result {
     text-align: end;
     font-size: 40px;
     font-weight: bold;
     margin: auto;
-    padding: 21px 10px;
+    padding: 0px;
+}
+
+.calculate {
+    text-align: end;
+    font-size: 25px;
+    color: gray;
+    margin: 10px 0px ;
 }
