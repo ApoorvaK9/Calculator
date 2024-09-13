@@ -48,10 +48,12 @@ btns.forEach(button => {
         
         switch (eventClassName) {
             case "num":
+                (display.length > 23) ? display = "Bacche ki jaan lega kya!" :
                 (display === "0") ? display = key : display += key;
                 break;
 
             case "dot":
+                (display.length > 23) ? display = "Bacche ki jaan lega kya!" :
                 display.includes(".") ? display : display += key;
                 break;
 
@@ -60,15 +62,27 @@ btns.forEach(button => {
                 display = String(operate(oper,num1,num2));
                 // num1 = Number(display);
                 break;
-            
+
             case "negate":
                 if (!oper)  display = String(-Number(display));
                 break;
-        
+
+            case "clear":
+                if(key === "clear") {
+                    display = "0";
+                    num1 = 0;
+                    num2 = 0;
+                }
+                else if(display !== "Bacche ki jaan lega kya!"){
+                        if((display.length !== 1) && (display !== "0")) 
+                            display = display.slice(0,-1);
+                        else display = "0";
+                    }
+                break;
+                
             default:
                 break;
         }
-
 
 
         // console.log(eventClassName);
