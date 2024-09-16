@@ -44,7 +44,7 @@ button.clear {
     background-color: orange;
 }
 
-button.equals {
+#equals {
     width: 195px;
 }
     
@@ -67,4 +67,6 @@ div#screen {
     font-size: 25px;
     color: gray;
     margin: 10px 0px ;
+    height: 28px;
+    width: 500px;
 }
