@@ -92,7 +92,7 @@ btns.forEach(button => {
                 break;
 
             case "clear":
-                if(key === "clear") {
+                if(key === "AC") {
                     display = "0";
                     num1 = 0;
                     num2 = 0;
