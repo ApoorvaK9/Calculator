@@ -1,12 +1,6 @@
-/* html {
-    box-sizing: border-box;
+html {
+    background: #818aaab0;
 }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-} */
 
 .container {
     display: flex;
@@ -19,23 +13,28 @@
     border: thick solid black;
     margin-top: 100px;
     row-gap: 20px;
+    background: #6b6969;
 }
 
 div#screen {
     width: 500px;
     height: 100px;
     border: thick solid black;
+    background: #c8d4c8;
 }
 
 button {
     height: 90px;
     width: 90px;
     margin: 5px;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 900;
     border: 1px solid black;
     border-bottom: blue 5px solid;
     border-right: blue 5px solid;
+    border-radius: 20px;
+    color: white;
+    background-color: gray;
 }
 
 button:active {
@@ -43,11 +42,10 @@ button:active {
 }
 
 button.oper {
-    background-color: gray;
     font-size : 35px;
 }
 button.clear {
-    background-color: orange;
+    background-color: #e400008f;
 }
 
 #equals {
@@ -62,7 +60,7 @@ div#screen {
 
 .result {
     text-align: end;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bold;
     margin: auto;
     padding: 21px 10px;
@@ -71,6 +69,12 @@ div#screen {
 .row {
     display: flex;
     row-gap: 10px;
+}
+
+button.num {
+    /* color: white; */
+    background: black;
+    /* border-radius: 20px; */
 }
 
 /* .calculate {
