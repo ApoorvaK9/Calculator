@@ -1,5 +1,5 @@
 html {
-    background: #818aaab0;
+     background:#dad3f5b0 /* #818aaab0; */
 }
 
 .container {
@@ -13,7 +13,8 @@ html {
     border: thick solid black;
     margin-top: 100px;
     row-gap: 20px;
-    background: #6b6969;
+    background: #ecd4d4; /*#6b6969*/
+    border-radius: 20px;
 }
 
 div#screen {
@@ -21,6 +22,7 @@ div#screen {
     height: 100px;
     border: thick solid black;
     background: #c8d4c8;
+    border-radius: 15px;
 }
 
 button {
@@ -30,8 +32,8 @@ button {
     font-size: 32px;
     font-weight: 900;
     border: 1px solid black;
-    border-bottom: blue 5px solid;
-    border-right: blue 5px solid;
+    border-bottom: #7c5595 5px solid;
+    border-right: #9867b7 5px solid;
     border-radius: 20px;
     color: white;
     background-color: gray;
@@ -73,7 +75,7 @@ div#screen {
 
 button.num {
     /* color: white; */
-    background: black;
+    background: #000000cc;
     /* border-radius: 20px; */
 }
 
