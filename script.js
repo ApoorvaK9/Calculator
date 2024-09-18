@@ -88,7 +88,7 @@ btns.forEach(button => {
                 break;
 
             case "negate":
-                if (!oper1)  display = String(-Number(display));
+                display = String(-Number(display));
                 break;
 
             case "clear":
