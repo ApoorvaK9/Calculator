@@ -31,7 +31,7 @@ button {
     margin: 5px;
     font-size: 32px;
     font-weight: 900;
-    border: 1px solid black;
+    border: 1px solid #7c5595;
     border-bottom: #7c5595 5px solid;
     border-right: #9867b7 5px solid;
     border-radius: 20px;
@@ -40,7 +40,7 @@ button {
 }
 
 button:active {
-    border: 1px solid black;
+    border: 1px solid #7c5595;
 }
 
 button.oper {
