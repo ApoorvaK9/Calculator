@@ -41,6 +41,7 @@ let oper1 = "";
 let oper2 = "";
 let num1 = 0;
 let num2 = 0;
+let tag = 0;
 
 btns.forEach(button => {
     button.addEventListener('click',(event) => {
@@ -49,10 +50,21 @@ btns.forEach(button => {
         
         switch (eventClassName) {
             case "num":
-                (display.length > 23) ? display = "Bacche ki jaan lega kya!" :
-                (display === "0" || oper1) ? display = key : display += key;
-                break;
-
+                //  (display.length > 23) ? display = "Bacche ki jaan lega kya!" :
+                //  (display === "0" || num1 ||num2) ? display = key : display += key;
+                if(display.length < 24){
+                    if(!num1)
+                        (display === "0") ? display = key : display += key;
+                    else if(tag === 1){
+                            display = key;
+                            tag = 0;}
+                    else if(tag === 0)
+                            display += key;
+                }
+                else 
+                    display = "Bacche ki jaan lega kya!";
+                 break;
+                
             case "dot":
                 (display.length > 23) ? display = "Bacche ki jaan lega kya!" :
                 display.includes(".") ? display : display += key;
@@ -68,9 +80,10 @@ btns.forEach(button => {
                     oper2 = key;
                     let output = operate(oper1,num1,num2);
                     oper1 = oper2;
-                    display = output;
+                    display =String(output);
                     num1 = output;
                     num2 = 0;
+                    tag = 1;
                 }
                 break;
 
@@ -86,7 +99,7 @@ btns.forEach(button => {
                     oper1 = "";
                     oper2 = "";
                 }
-                else if(display !== "Bacche ki jaan lega kya!"){
+                else if(display !== "Bacche ki jaan lega kya!" || display !== "NAN"){
                         if((display.length !== 1) && (display !== "0")) 
                             display = display.slice(0,-1);
                         else display = "0";

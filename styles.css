@@ -34,6 +34,12 @@ button {
     font-size: 30px;
     font-weight: 900;
     border: 1px solid black;
+    border-bottom: blue 5px solid;
+    border-right: blue 5px solid;
+}
+
+button:active {
+    border: 1px solid black;
 }
 
 button.oper {
@@ -59,14 +65,19 @@ div#screen {
     font-size: 40px;
     font-weight: bold;
     margin: auto;
-    padding: 0px;
+    padding: 21px 10px;
 }
 
-.calculate {
+.row {
+    display: flex;
+    row-gap: 10px;
+}
+
+/* .calculate {
     text-align: end;
     font-size: 25px;
     color: gray;
     margin: 10px 0px ;
     height: 28px;
     width: 500px;
-}
+} */
