@@ -52,7 +52,7 @@ btns.forEach(button => {
             case "num":
                 //  (display.length > 23) ? display = "Bacche ki jaan lega kya!" :
                 //  (display === "0" || num1 ||num2) ? display = key : display += key;
-                if(display.length < 24){
+                if(display.length < 21){
                     if(!num1)
                         (display === "0") ? display = key : display += key;
                     else if(tag === 1){
@@ -66,7 +66,7 @@ btns.forEach(button => {
                  break;
                 
             case "dot":
-                (display.length > 23) ? display = "Bacche ki jaan lega kya!" :
+                (display.length > 20) ? display = "Bacche ki jaan lega kya!" :
                 display.includes(".") ? display : display += key;
                 break;
 
