@@ -100,7 +100,7 @@ btns.forEach(button => {
                     oper2 = "";
                 }
                 else if(key === "<"){ 
-                    if(display.length === 2 && display < 0) display = "0";
+                    if(display.length === 2 && display <= 0) display = "0";
                     else if(!(isNaN(display)) && (display.length > 1) && (display !== "0")){
                             display = display.slice(0,-1);
                         }
