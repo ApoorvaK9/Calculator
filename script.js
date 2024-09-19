@@ -99,10 +99,12 @@ btns.forEach(button => {
                     oper1 = "";
                     oper2 = "";
                 }
-                else if(display !== "Bacche ki jaan lega kya!"){
-                        if((display.length !== 1) && (display !== "0")) 
+                else if(key === "<"){ 
+                    if(display.length === 2 && display < 0) display = "0";
+                    else if(!(isNaN(display)) && (display.length > 1) && (display !== "0")){
                             display = display.slice(0,-1);
-                        else display = "0";
+                        }
+                    else display = "0";
                     }
                 break;
 
