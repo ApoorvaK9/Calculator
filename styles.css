@@ -56,7 +56,7 @@ button.clear {
     
 .result {
     text-align: end;
-    font-size: clamp(45px, 5vw, 38px);
+    font-size: 45px;
     font-weight: bold;
     margin: auto;
     padding: 21px 10px;
