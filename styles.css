@@ -74,9 +74,7 @@ div#screen {
 }
 
 button.num {
-    /* color: white; */
     background: #000000cc;
-    /* border-radius: 20px; */
 }
 
 .footer {
@@ -88,13 +86,3 @@ button.num {
     padding: 30px;
     gap: 10px;
 }
-
-
-/* .calculate {
-    text-align: end;
-    font-size: 25px;
-    color: gray;
-    margin: 10px 0px ;
-    height: 28px;
-    width: 500px;
-} */

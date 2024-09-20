@@ -4,15 +4,6 @@ const subtract = (a,b) => a-b;
 const multiply = (a,b) => a*b;
 const divide = (a,b) => a/b;
 
-const container = document.querySelector(".container");
-const firstNum = document.createElement("p");
-// container.appendChild(firstNum);
-const operator = document.createElement("p");
-// container.appendChild(operator);
-const secondNum = document.createElement("p");
-// container.appendChild(secondNum);
-
-
 function operate(operator,num1,num2){
     switch (operator) {
         case "+":
@@ -29,13 +20,11 @@ function operate(operator,num1,num2){
 
         default:
             return num1+num2;
-            // break;
     }
 }
 
 const btns = document.querySelectorAll("button");
 let savedNum = document.querySelector(".result");
-// let calculations = document.querySelector(".calculate");
 let display = "0";
 let oper1 = "";
 let oper2 = "";
@@ -50,8 +39,6 @@ btns.forEach(button => {
         
         switch (eventClassName) {
             case "num":
-                //  (display.length > 23) ? display = "Bacche ki jaan lega kya!" :
-                //  (display === "0" || num1 ||num2) ? display = key : display += key;
                 if(display.length < 19){
                     if(!num1)
                         (display === "0") ? display = key : display += key;
@@ -113,6 +100,5 @@ btns.forEach(button => {
         }
 
         savedNum.textContent = display;
-        // calculations.textContent = `${num1} + ${num2}`;
     });
 });
