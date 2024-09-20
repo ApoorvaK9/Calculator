@@ -79,6 +79,17 @@ button.num {
     /* border-radius: 20px; */
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: 0;
+    padding: 30px;
+    gap: 10px;
+}
+
+
 /* .calculate {
     text-align: end;
     font-size: 25px;
